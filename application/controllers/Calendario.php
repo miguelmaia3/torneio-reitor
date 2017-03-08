@@ -2,7 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Calendario extends CI_Controller {
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> b92776a2412db6a94a63f2ffa547b09b4c05ddb9
 	public function __construct()
     {
 	    parent::__construct();
@@ -27,10 +31,16 @@ class Calendario extends CI_Controller {
 	public function view()
 	{
 
+<<<<<<< HEAD
 
 		$data['row'] = $this->calendario_model->getJogos();
 
 		//print_r($data);
+=======
+		$data['row'] = $this->calendario_model->getJogos();
+
+		print_r($data);
+>>>>>>> b92776a2412db6a94a63f2ffa547b09b4c05ddb9
 		$this->load->view('template/header', $data);
 		$this->load->view('calendario');
 		$this->load->view('template/footer');

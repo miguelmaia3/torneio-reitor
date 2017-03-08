@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <title> Calendário </title>
 <body>
 <div class="container">
@@ -23,3 +24,21 @@
 	</tbody>
 
 </body></table></div>
+=======
+<div class="container">
+<table class="table table-striped">
+  <tr>
+    <th> Jornada </th>
+    <th> Dia </th>
+  </tr>
+
+  <?php foreach( $row as $row):?>
+  <tr>
+    <td> <?php echo $row['jornada'] ;?> </td>
+    <td> <?php echo $row['resultado'] ;?> </td>
+  </tr>
+
+<?php endforeach; ?>
+</table>
+</div>
+>>>>>>> b92776a2412db6a94a63f2ffa547b09b4c05ddb9
