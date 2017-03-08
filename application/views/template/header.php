@@ -74,8 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </style>
 
     <!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	
 </head>
 <body style="margin: 0px">

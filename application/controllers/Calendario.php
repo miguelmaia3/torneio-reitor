@@ -28,7 +28,11 @@ class Calendario extends CI_Controller {
 	{
 
 
-		$this->load->view('template/header');
+		$data['row'] = $this->calendario_model->getJogos();
+
+		//print_r($data);
+		$this->load->view('template/header', $data);
+		$this->load->view('calendario');
 		$this->load->view('template/footer');
 
 	}
