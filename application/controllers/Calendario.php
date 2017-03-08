@@ -24,14 +24,11 @@ class Calendario extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function view()
 	{
 
-		$data['row'] = $this->calendario_model->getJogos();
 
-		print_r($data);
 		$this->load->view('template/header');
-		$this->load->view('calendario');
 		$this->load->view('template/footer');
 
 	}
